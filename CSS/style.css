@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+}
+a{
+  color: black;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#article{
+  padding-left: 20px;
+}
+h1{
+  font-size: 50px;
+  text-align: center;
+  border-bottom: 3px solid gray;
+  margin: 0;
+  padding: 20px;
+}
+#grid ol{ /*grid라는 id내의 ol태그의 속성만을 지정. 중요!*/
+  width: 100px;
+  border-right: 3px solid gray;
+  margin: 0;
+  padding: 20px;
+  padding-left: 33px;
+}
+/* screen width < 800px */
+@media(max-width: 800px){
+  #grid{
+    display: block;
+  }
+  #grid ol{
+    border-right: none;
+  }
+}
